@@ -1,9 +1,9 @@
 package datacom;
 
-import datacom.utilities.Log;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import datacom.utilities.ExtentReporter;
+import datacom.utilities.Log;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestContext;
 import org.testng.ITestListener;

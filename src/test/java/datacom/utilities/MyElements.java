@@ -19,7 +19,7 @@ public class MyElements extends listener {
     }
 
     public static void wait(WebDriver driver, String xpath) throws InterruptedException {
-        Thread.sleep(300);
+        Thread.sleep(100);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(xpath))));
     }

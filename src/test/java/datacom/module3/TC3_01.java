@@ -1,16 +1,17 @@
 package datacom.module3;
 
 import datacom.base.BrowserManager;
-import datacom.utilities.*;
+import datacom.utilities.DataCom;
+import datacom.utilities.Log;
+import datacom.utilities.Screen;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import java.io.IOException;
-import java.util.Map;
 
-import static datacom.utilities.MyElements.getAttribute;
+import java.io.IOException;
+
 import static datacom.utilities.MyElements.getText;
 
 public class TC3_01 extends BrowserManager {
@@ -38,7 +39,7 @@ public class TC3_01 extends BrowserManager {
         Thread.sleep(300);
         DataCom.logs("User Scroll Down the page");
 
-        String agreement = getText(driver, By.xpath("/html/body/div[6]/div/div/div/div/div/div[3]/div/form/div[31]"));
+        String agreement = getText(driver, By.xpath("//*[@id=\"mktoForm_1846\"]/div[31]"));
         Assert.assertTrue(agreement.contains("This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply."));
         DataCom.logsPassed("The user able to see the Google Privacy Policy and Terms of Service on the modal");
 

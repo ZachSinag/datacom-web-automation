@@ -1,12 +1,15 @@
 package datacom.module1;
 
 import datacom.base.BrowserManager;
-import datacom.utilities.*;
+import datacom.utilities.DataCom;
+import datacom.utilities.Log;
+import datacom.utilities.MyElements;
+import datacom.utilities.Screen;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import java.io.IOException;
-import java.util.Map;
 
 public class TC1_02 extends BrowserManager {
 

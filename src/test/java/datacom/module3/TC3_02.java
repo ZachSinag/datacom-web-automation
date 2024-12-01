@@ -3,16 +3,14 @@ package datacom.module3;
 import datacom.base.BrowserManager;
 import datacom.utilities.*;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import java.io.IOException;
 import java.util.Map;
 
-import static datacom.utilities.MyElements.getAttribute;
 import static datacom.utilities.MyElements.getText;
 
 public class TC3_02 extends BrowserManager {

@@ -1,16 +1,18 @@
 package datacom.module2;
 
 import datacom.base.BrowserManager;
-import datacom.utilities.*;
+import datacom.utilities.DataCom;
+import datacom.utilities.Log;
+import datacom.utilities.MyElements;
+import datacom.utilities.Screen;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.util.Map;
 
-import static datacom.utilities.MyElements.*;
+import static datacom.utilities.MyElements.getAttribute;
+import static datacom.utilities.MyElements.getText;
 
 public class TC2_09 extends BrowserManager {
     private static final By DEFAULT_MAP_LOCATOR = By.xpath("/html/body/div[2]/div/div/div/div[2]/div/div[2]/div[1]/div[3]/div[1]/div[1]");

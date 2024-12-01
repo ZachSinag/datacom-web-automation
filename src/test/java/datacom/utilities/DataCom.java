@@ -1,11 +1,13 @@
 package datacom.utilities;
 
-import datacom.listener;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import org.openqa.selenium.*;
+import datacom.listener;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
 import java.io.IOException;
 
 
@@ -47,8 +49,6 @@ public class DataCom extends listener {
         extentTest.get().log(Status.INFO, markTitle);
 
         MyElements.wait(driver, "/html/body/div[1]/header/div/div/a/img");
-
-
 
         DataCom.logsCapture(driver, className, "User accessed the following link: " + url);
 
