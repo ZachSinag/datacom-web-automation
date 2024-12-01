@@ -1,0 +1,4 @@
+email,forename,lastname,number,jobTitle,companyName,country,message,forename_error_message,lastname_error_message,number_error_message,email_error_message,job_error_message,dropdown_error_message,company_error_message,environment,identifier
+demotest123@blondmail.com,Demo,Test,999999999,job test,company test,Australia,This is for demo automation testing,,,,,,,,all,valid_contact_us
+demotest123@blondmail.com,Demo,Test,999999999,job test,company test,Australia,This is for demo automation testing,,,,,,,,all,success_application
+mail_incorrect.com,Invalid ,Email,999999999,job test,company test,Australia,,Please enter your First name,Please enter your Last name,Please enter your Phone number,Please enter your Business email,Please enter your Job title,Please select an option,Please enter your Company name,all,submit_invalid
